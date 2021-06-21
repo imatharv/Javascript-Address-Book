@@ -38,6 +38,10 @@ class AddressBook{
     get phoneNumber() {return this._phoneNumber;}
     set phoneNumber(phoneNumber) {this._phoneNumber = this.phoneNumber;}
     
+    toString() {
+       return "First name: "+ this.firstName +", Last name: "+this.lastName+", Address: "+this.address+", City: "+this.city+
+       ", State: "+this.state+", Pin: "+this.pin+", Phone number: "+this.phoneNumber;
+    }
 }
 
 let contact = new AddressBook("Atharva","Joshi","Sagar park","Jalgaon","Maharashtra","425001","9665654666");
